@@ -1,0 +1,88 @@
+/* src/components/Header.css */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 32px;       /* mais espaço lateral */
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  height: 80px;          /* altura maior para dar respiro */
+}
+
+/* Logo bem maior */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 64px;           /* tamanho aumentado */
+  height: 64px;
+  object-fit: contain;   /* garante que não deforma */
+}
+
+/* Título centralizado */
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.6rem;     /* maior */
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Ações à direita */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Caixa de busca */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  margin-left: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  color: #111827;
+  width: 160px;
+}
+
+/* Botões ícones */
+.icon-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.icon-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Usuário logado */
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+}

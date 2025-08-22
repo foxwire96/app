@@ -1,0 +1,16 @@
+.boletim-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.boletim-table th, .boletim-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: center;
+}
+
+.boletim-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}

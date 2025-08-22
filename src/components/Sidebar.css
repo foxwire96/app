@@ -1,0 +1,115 @@
+/* Sidebar container */
+.sidebar {
+  width: 240px;
+  background: #eff6ff; /* azul-cinza bem claro */
+  color: #eff1f4;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  position: relative;
+  min-height: 100vh;
+  border-right: 1px solid #e5e7eb;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05); /* sombra sutil */
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Logo */
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo-img {
+  width: 70px;  /* maior para destaque */
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Navegação */
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 6px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 20px;
+  color: #374151;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s, transform 0.1s;
+  border-radius: 10px;
+  margin: 2px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  background: #e0f2fe; /* azul bem clarinho */
+  color: #0f172a;
+  transform: translateX(2px);
+}
+
+.sidebar-link.active {
+  background: #2563eb; /* azul forte */
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px #1d4ed8;
+}
+
+/* Emojis/ícones */
+.sidebar-link .emoji-icon {
+  font-size: 22px; /* maior usabilidade */
+  line-height: 1;
+}
+
+/* Footer - Logout */
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  cursor: pointer;
+  font-weight: 500;
+  color: #dc2626;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.sidebar-footer:hover {
+  background: #fee2e2;
+  transform: translateX(2px);
+}
+
+.sidebar-footer .emoji-icon {
+  font-size: 22px;
+}
+
+/* Botão collapse */
+.collapse-btn {
+  position: absolute;
+  top: 20px;
+  right: -14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+
+.collapse-btn:hover {
+  background: #1d4ed8;
+}

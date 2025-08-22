@@ -1,0 +1,89 @@
+/* Formulário principal */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Título dentro do form */
+.login-form h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+/* Grupo de campo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Inputs elegantes */
+.form-group input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Botão principal de login */
+.btn-login {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0px 6px 16px rgba(29, 78, 216, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-login:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 8px rgba(29, 78, 216, 0.3);
+}
+
+/* Link de recuperação de senha */
+.link-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 8px;
+  align-self: flex-end;
+  transition: color 0.2s;
+}
+
+.link-button:hover {
+  color: #1d4ed8;
+}

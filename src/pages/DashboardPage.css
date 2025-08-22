@@ -1,0 +1,60 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  overflow-y: auto;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Grid dos cards de estatísticas */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Relatórios */
+.reports h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.report-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.report-card h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.report-card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #111827;
+}
