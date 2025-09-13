@@ -40,7 +40,6 @@ const Sidebar = () => {
       {!collapsed && (
         <h2 className="sidebar-logo">
           <img src={logo} alt="Logo da Escola" className="sidebar-logo-img" />
-          
         </h2>
       )}
 

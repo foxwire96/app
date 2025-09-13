@@ -26,8 +26,9 @@
 }
 
 .sidebar-logo-img {
-  width: 70px;  /* maior para destaque */
-  height: 70px;
+  width: 80%;  
+  height: auto; 
+  max-width: 180px; 
   object-fit: contain;
 }
 

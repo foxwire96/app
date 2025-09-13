@@ -19,10 +19,12 @@
 }
 
 .header-logo {
-  width: 64px;           /* tamanho aumentado */
-  height: 64px;
-  object-fit: contain;   /* garante que não deforma */
+  width: 100%;      
+  max-width: 150px; 
+  height: auto;     
+  object-fit: contain;
 }
+
 
 /* Título centralizado */
 .header-title {
