@@ -188,3 +188,32 @@ button {
 .btn-voltar:hover {
   background: #1d4ed8;
 }
+
+/* Estilos do Toastify */
+.Toastify__toast-container {
+  z-index: 9999; /* Garante que o Toast apareça acima de outros componentes */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.Toastify__toast {
+  background-color: #4caf50;  /* Cor de fundo do toast */
+  color: white;
+  font-size: 0.9rem;  /* Reduz o tamanho da fonte */
+  border-radius: 6px;  /* Borda arredondada */
+  padding: 8px 14px;  /* Ajusta o padding para toasts menores */
+  max-width: 250px;  /* Controla a largura máxima */
+}
+
+.Toastify__toast--success {
+  background-color: #10b981;
+}
+
+.Toastify__toast--error {
+  background-color: #ef4444;
+}
+
+.Toastify__toast--info {
+  background-color: #3b82f6;
+}

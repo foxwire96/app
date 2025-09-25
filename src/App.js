@@ -9,6 +9,7 @@ import AlunosPage from './pages/AlunosPage';
 import TurmasPage from './pages/TurmasPage'; 
 import ComunicadosPage from './pages/ComunicadosPage'; // ✅ nova página
 
+
 function App() {
   return (
     <Routes>
@@ -24,6 +25,7 @@ function App() {
       <Route path="/turmas" element={<TurmasPage />} />
       <Route path="/comunicados" element={<ComunicadosPage />} /> {/* ✅ nova rota */}
     </Routes>
+  
   );
 }
 

@@ -1,7 +1,9 @@
+// src/pages/TurmasPage.jsx
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import LancarNotaPresencaModal from "../components/Modals/LancarNotaPresencaModal";
 import { useAuth } from "../context/AuthContext";
+import { ToastContainer, toast } from 'react-toastify'; // Importando o ToastContainer e o toast
 import "./TurmasPage.css";
 
 export default function TurmasPage() {
@@ -73,6 +75,7 @@ export default function TurmasPage() {
       )
     );
     setShowModal(false);
+    toast.success("Nota e presença lançadas com sucesso!"); // Exibe o toast após salvar
   };
 
   // ✅ Adicionar/editar/excluir turmas (apenas Admin)
@@ -84,12 +87,14 @@ export default function TurmasPage() {
         ...prev,
         { id: Date.now(), nome, disciplina, professorId: "prof-1", alunos: [] },
       ]);
+      toast.success("Turma adicionada com sucesso!"); // Exibe o toast após adicionar turma
     }
   };
 
   const handleDeleteTurma = (id) => {
     if (window.confirm("Tem certeza que deseja excluir esta turma?")) {
       setTurmas((prev) => prev.filter((t) => t.id !== id));
+      toast.error("Turma excluída!"); // Notificação de erro
     }
   };
 
@@ -175,6 +180,21 @@ export default function TurmasPage() {
           />
         )}
       </div>
+
+      {/* Adicionando o ToastContainer aqui */}
+      <ToastContainer
+        position="bottom-right"  // Colocando no canto inferior direito
+        autoClose={3000}  // Tempo de exibição do toast (em milissegundos)
+        hideProgressBar={true}  // Esconde a barra de progresso
+        newestOnTop={true}  // Faz com que o último toast apareça em cima
+        closeButton={false} // Remove o botão de fechar
+        limit={3}  // Limita o número de toasts visíveis ao mesmo tempo
+        style={{
+         width: '250px', // Largura menor
+         fontSize: '0.9rem', // Reduz o tamanho da fonte
+        borderRadius: '6px', // Arredonda as bordas
+        }}
+      />
     </div>
   );
 }
